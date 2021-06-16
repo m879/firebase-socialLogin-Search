@@ -1,0 +1,89 @@
+{
+    "network" : [
+        {
+            "id": 1,
+            "username":"Dr. Meraj Ahmed",
+            "speciality":"Cardiology (Heart Care)",
+            "work":"Asma Hospital,Kushinagar",
+            "img":"https://cdn.pixabay.com/photo/2015/01/08/18/30/entrepreneur-593371_960_720.jpg" 
+        },
+        {
+            "id" : 2,
+            "username":"Dr. Akhlakh Ahmed",
+            "speciality":"Oncology (Cancer Care)",
+            "work":"Ahmed Hospital,Kushinagar",
+            "img":"https://cdn.pixabay.com/photo/2015/03/26/09/41/tie-690084_960_720.jpg"
+        },
+        {
+            "id": 3,
+            "username":"Dr. Akshay Gupta",
+            "speciality":"Neurology.",
+            "work":"Apollo Hospital,Kushinagar",
+            "img":"https://cdn.pixabay.com/photo/2017/02/04/12/25/man-2037255_960_720.jpg"
+        },
+        {
+            "id": 4,
+            "username":"Dr. Manish Kumar",
+            "speciality":"Gastroenterology.",
+            "work":"City Hospital,Kushinagar",
+            "img":"https://cdn.pixabay.com/photo/2015/01/08/18/29/entrepreneur-593358_960_720.jpg" 
+        },
+        {
+            "id": 5,
+            "username":"Dr. Adeeb Akhtar",
+            "speciality":"Dentist",
+            "work":"Asma Hospital,Kushinagar",
+            "img":"https://cdn.pixabay.com/photo/2015/03/26/09/41/tie-690084_960_720.jpg"
+        },
+        {
+            "id": 6,
+            "username":"Dr. Zaid Ali",
+            "speciality":"Cardiology (Heart Care)",
+            "work":"Ahmed Hospital,Kushinagar",
+            "img":"https://cdn.pixabay.com/photo/2016/03/09/10/23/model-1246028_960_720.jpg"
+        },
+        {
+            "id": 6,
+            "username":"Dr. Mohd. Ahmad",
+            "speciality":"Gastroenterology.",
+            "work":"City Hospital,Kushinagar",
+            "img":"https://cdn.pixabay.com/photo/2015/01/08/18/29/entrepreneur-593358_960_720.jpg" 
+        },
+        {
+            "id": 7,
+            "username":"Dr. Arish Faiz",
+            "speciality":"Neurology.",
+            "work":"Asma Hospital,Kushinagar",
+            "img":"https://cdn.pixabay.com/photo/2017/02/04/12/25/man-2037255_960_720.jpg"
+        },
+        {
+            "id": 9,
+            "username":"Dr. Ali Gauhar",
+            "speciality":"Oncology (Cancer Care)",
+            "work":"Apollo Hospital,Kushinagar",
+            "img":"https://cdn.pixabay.com/photo/2016/03/09/10/23/model-1246028_960_720.jpg"
+        },
+        {
+            "id": 10,
+            "username":"Dr. Amaan Ali",
+            "speciality":"Dentist",
+            "work":"Asma Hospital,Kushinagar",
+            "img":"https://cdn.pixabay.com/photo/2017/02/04/12/25/man-2037255_960_720.jpg"
+        },
+        {
+            "id": 11,
+            "username":"Dr. Mohd. Kashif",
+            "speciality":"Cardiology (Heart Care)",
+            "work":"Asma Hospital,Kushinagar",
+            "img":"https://cdn.pixabay.com/photo/2015/03/26/09/41/tie-690084_960_720.jpg"
+        },
+        {
+            "id": 12,
+            "username":"Dr. Rehan Akram",
+            "speciality":"Gastroenterology.",
+            "work":"City Hospital,Kushinagar",
+            "img":"https://cdn.pixabay.com/photo/2015/03/26/09/41/tie-690084_960_720.jpg"
+        }
+    ]
+}
+

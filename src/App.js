@@ -1,24 +1,56 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect, useState } from "react";
+import { BrowserRouter as Router, Route,Link} from 'react-router-dom';
+import {auth,googleAuthProvider}  from './config';
+
+import 'bootstrap/dist/css/bootstrap.min.css';
+
+import Home from './components/Home';
+import Auth from './components/Auth';
+import Unauthorized from './components/Unauthorized';
+import ProtectedRoute from './components/ProtectedRoute';
 
 function App() {
+
+  const [user, setUser] = useState(false)
+
+  const handleLogin = e => {
+    e.preventDefault();
+    auth.signInWithPopup(googleAuthProvider)
+    .then((result) => {
+      var user = result.user;
+      console.log(user.email);
+      localStorage.setItem('user', true);
+      localStorage.setItem('userName', user.displayName);
+      setUser(true);
+    }).catch((error) => {
+       console.log(error);
+    });
+
+  }
+
+  const handleLogout = e => {
+    e.preventDefault();
+    auth.signOut().then(()=> {
+      console.log('logged out');
+      localStorage.removeItem('userName');
+    }).catch((error) => {
+      console.log(error.message)
+    })
+    setUser(false);
+  }
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      
+    <Router>
+      
+      <Route exact path='/' handleLogin={handleLogin} render={
+        props => <Auth {...props} user={user.toString()}
+          handleLogin={handleLogin} />} />
+      <ProtectedRoute exact path='/home' user={user} handleLogout={handleLogout} component={Home} />
+      <Route exact path='/unauthorized' component={Unauthorized} />
+    </Router>
+  </div>
   );
 }
 
